@@ -1,0 +1,158 @@
+Got it! Here’s the updated HTML with Google Pay and Paytm options included for each product, ensuring your customers have multiple payment methods:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Photography Sale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-image: url('header-background.jpg'); /* Replace with your image */
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .header p {
+            font-size: 1.5em;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.02);
+        }
+        .product h2 {
+            color: #333;
+        }
+        .product p {
+            font-size: 16px;
+            color: #555;
+        }
+        .product-price {
+            font-weight: bold;
+            color: #27ae60;
+            font-size: 18px;
+        }
+        .pay-btn {
+            margin-top: 10px;
+        }
+        .pay-btn img {
+            width: 120px;
+            margin-right: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Buy Nature Photography</h1>
+    <p>Get beautiful, high-quality nature photography at affordable prices!</p>
+</div>
+
+<div class="container">
+
+    <!-- Product 1 -->
+    <div class="product">
+        <h2>Nature Photography - Sunset</h2>
+        <img src="path-to-your-image-1.jpg" alt="Serene Sunset" style="width:100%; max-height: 400px;">
+        <p>Capture the beauty of a serene sunset with this high-resolution nature photograph.</p>
+        <p class="product-price">$20</p>
+        <!-- Payment Options -->
+        <div class="pay-btn">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="sk2109332@gmail.com">
+                <input type="hidden" name="item_name" value="Nature Photography - Sunset">
+                <input type="hidden" name="amount" value="20">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="submit" value="Buy with PayPal">
+            </form>
+        </div>
+        <div class="pay-btn">
+            <!-- Google Pay -->
+            <a href="https://pay.google.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Google_Pay_Logo_%282020%29.svg/1280px-Google_Pay_Logo_%282020%29.svg.png" alt="Google Pay">
+            </a>
+        </div>
+        <div class="pay-btn">
+            <!-- Paytm -->
+            <a href="https://paytm.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Paytm_logo.png" alt="Paytm">
+            </a>
+        </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+        <h2>Nature Photography - Waterfall</h2>
+        <img src="path-to-your-image-2.jpg" alt="Beautiful Waterfall" style="width:100%; max-height: 400px;">
+        <p>A breathtaking shot of a waterfall surrounded by lush greenery, perfect for your home or office.</p>
+        <p class="product-price">$20</p>
+        <!-- Payment Options -->
+        <div class="pay-btn">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="sk2109332@gmail.com">
+                <input type="hidden" name="item_name" value="Nature Photography - Waterfall">
+                <input type="hidden" name="amount" value="20">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="submit" value="Buy with PayPal">
+            </form>
+        </div>
+        <div class="pay-btn">
+            <!-- Google Pay -->
+            <a href="https://pay.google.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Google_Pay_Logo_%282020%29.svg/1280px-Google_Pay_Logo_%282020%29.svg.png" alt="Google Pay">
+            </a>
+        </div>
+        <div class="pay-btn">
+            <!-- Paytm -->
+            <a href="https://paytm.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Paytm_logo.png" alt="Paytm">
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>© 2024 Nature Photography. All rights reserved.</p>
+</div>
+
+</body>
+</html>
+```
+
+### Key Features Added:
+- **Payment Options**: Included Google Pay and Paytm links for each product, alongside PayPal.
+- **User-Friendly**: The layout remains clean and engaging while providing multiple payment options.
+
+Feel free to adjust the links, images, or any text as needed! If you want more customizations or features, just let me know!
